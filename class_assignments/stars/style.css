@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap');
+
+body{
+background-color: black;
+margin: 0;
+}
+/* NAVBAR is sticky on top */
+#navbar{
+    /* margin-left: 100%;
+    margin-right: 100%; */
+    top: 0;
+    background-color: rgb(19, 66, 89);
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2px;
+    height: 100%;
+}
+#pagetitle{
+    font-size: 2em;
+    margin: 0px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: black;
+}
+nav{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;
+    width: auto;
+    
+}
+p, a{
+    margin: 1%;
+    font-family: "Stack Sans Notch";
+}
+
+.nav{
+    border-radius: 0.5em;
+    color: black;
+    text-decoration: none;
+    background-color: yellow;
+    font-size: 1.2em;
+}
+a.nav:hover{
+    color: yellow;
+    background-color: blueviolet;
+}
+a, .pagetitle{
+    color: black;
+}
+a.nav:active{
+    color: yellow;
+}
+
+#homepageicon{
+    height: 39px;
+    width: 39px;
+}
+main{
+width: 100%;
+display: grid;
+align-items: start;
+grid-template-columns: 2fr 1fr 1fr;
+margin: 0;
+ grid-template-areas: /* placing grid items */
+          'a b c'
+          'a b d';
+}
+.a{grid-area: a;}
+.b{grid-area: b;
+width: 600px;
+height:600px;}
+.c{ grid-area: c;
+
+}
+.d{grid-area: d;}
+.c, .d{
+    width: 300px;
+    height: 300px;
+    gap: 0;
+}
+p{
+    color: white;
+    font-size: 1.64em;
+}
+footer{
+    font-size: .5em;
+    text-align: center;
+}

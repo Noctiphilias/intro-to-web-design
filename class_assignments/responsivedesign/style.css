@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap');
+
+:root {
+  --text-bg-color: yellow; /* global scope */
+}
+
+body{
+background-color: rgb(255, 255, 255);
+margin: 0;
+}
+/* NAVBAR is sticky on top */
+#navbar{
+    /* margin-left: 100%;
+    margin-right: 100%; */
+    top: 0;
+    background-color: rgb(19, 66, 89);
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2px;
+    height: 100%;
+}
+#pagetitle{
+    font-size: 2em;
+    margin: 0px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: black;
+}
+nav{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    width: auto;
+    
+}
+p, a{
+    margin: 1%;
+    font-family: "Stack Sans Notch";
+}
+
+.nav{
+    border-radius: 0.5em;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.5em;
+background-color: var(--text-bg-color);
+
+}
+a.nav:hover{
+    color: var(--text-bg-color);
+    background-color: blueviolet;
+}
+a, .pagetitle{
+    color: rgb(0, 0, 0);
+}
+a.nav:active{
+    color: var(--text-bg-color);
+}
+
+#homepageicon{
+    height: 78px;
+    width: 78px;
+}
+main{
+width: 100%;
+display: inline;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+}
+footer{
+    font-size: .5em;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 45em) {
+  main {
+display: grid;
+align-items: start;
+grid-template-columns: repeat(3, 1fr);
+grid-template-columns: 1fr;
+ grid-template-areas: /* fixed the grid items */
+          'a b c'
+          'a b d'
+          ;
+}
+.a{grid-area: a;}
+.b{grid-area: b;}
+.c{ grid-area: c;}
+.d{grid-area: d;}
+.c, .d{
+    max-width: 100%;
+    height: 100%;
+}
+    nav{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .nav{
+    font-size: 1em;
+  }
+header{
+    flex-direction: row;
+    justify-content: center;
+}
+#homepageicon{
+    height: 39px;
+    width: 39px;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+}
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+  }
+  p{
+    color: white;
+  }
+}

@@ -1,0 +1,98 @@
+@font-face{
+    font-family: "goudy";
+    src: url('../fonts/goudy.woff');
+}
+body{
+    background-color: #C4C4C4;
+        font-family: "goudy", serif;
+
+}
+header{
+    text-align: center;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    border-bottom: black dotted 2px;
+    padding-bottom: 0;
+    column-gap: 0;
+}
+.nyufooter{
+    text-align: center;
+    font-size: 0.8em;
+    font-style: italic;
+}
+.homenav{
+    text-align: center;
+    display: flex;
+    font-size: 0.9em;
+    color: black;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+}
+.homepgnav{
+    text-align: center;
+    display: flex;
+    font-size: 0.9em;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+}
+img.mepic{
+    height: 50px;
+    width: auto;
+}
+article{
+    text-align: center;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.pets{
+    display: flex;
+  justify-content: space-between;
+}
+h2, h3{
+    text-align: center;
+        font-family: "goudy", serif;
+
+}
+p{
+    text-align: center;
+    font-family: "goudy", serif;
+}
+    a{
+      color: black;
+    }
+    a:hover{
+      color: #AB63AB;
+    }
+    a:visited{
+      color: #ABA763;
+    }
+    a:active{
+      color: #AB63AB;
+    }
+article.animation{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+}
+    #logo{
+      width: 5%;
+      height: auto;
+    }
+  #logo:hover{
+    fill: #AB63AB;
+    transition: 0.5s;
+  }
+  #logo:active, #logo:visited{
+        fill: #ABA763;
+  }
